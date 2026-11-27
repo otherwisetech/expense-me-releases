@@ -5,6 +5,19 @@ Todas las versiones son para macOS 11 o posterior en Mac con Apple silicon, con 
 [Releases](https://github.com/otherwisetech/expense-me-releases/releases); las versiones anteriores a
 0.3.17 no se publicaron en este repositorio.
 
+## 0.3.18 (2026-11-27)
+
+- **Ya no te pide la contraseña del Mac.** Después de cada actualización, macOS volvía a pedir la
+  contraseña de inicio de sesión para dejar que expense me usara el llavero, a veces varias veces.
+  Ahora las claves que guardas en la app (la del correo y las de tus extractos) quedan en un archivo
+  de expense me en este computador que solo tu usuario puede leer, fuera de tus libros y de OneDrive.
+- La primera vez que abras esta versión, macOS puede pedir **una última vez** acceso al llavero para
+  pasar tus claves guardadas ("Permitir siempre" o "Permitir"). Si eliges "Denegar", no se pierde
+  nada: se intenta otra vez al abrir la app.
+- *English:* no more Mac password prompts after updates. Saved passwords now live in an expense me
+  file on this computer that only your user can read. macOS may ask one last time for keychain
+  access the first time you open this version.
+
 ## 0.3.17 (2026-11-27)
 
 - **El aspecto de la familia de apps de Otherwise**: la barra lateral con el selector de libro, los
