@@ -1,121 +1,77 @@
+**English** · [Español](README.es.md)
+
 # expense me
 
-**Tus finanzas personales, privadas y gratis, en tu Mac.** Una app de
+**Your personal finances, private and free, on your Mac.** An app by
 [Otherwise Technologies LLC](https://otherwisetech.com).
 
-Recibos, cuentas y extractos, tarjetas, créditos, presupuesto, pagos pendientes, suscripciones,
-ingresos y patrimonio en un solo lugar, en tu computador. Sin cuenta, sin suscripción.
+Receipts, accounts and statements, cards, loans, budget, upcoming bills, subscriptions, income and net
+worth in one place, on your computer. No account, no subscription.
 
-> **Este repositorio solo tiene builds y documentación.** expense me es software propietario de
-> código cerrado (gratis para usar); el código no está aquí. Aquí encuentras las descargas, las
-> notas de cada versión y el lugar para reportar problemas.
+> **This repository only holds builds and documentation.** expense me is proprietary, closed-source
+> software (free to use); its source code is not here. This is where you'll find the downloads, the
+> notes for each version and the place to report problems.
 
-[English below](#english)
+## What it does
 
-## Qué hace
+- **Home**: how much you can spend today without overspending, what's due soon and what deserves a look.
+- **Receipts**: drag photos or PDFs onto the window; they're read on your computer and wait for you to
+  review and save them.
+- **Accounts and statements**: drop in your statements (password-protected PDFs, Excel, CSV) and they
+  land in the right account, with their transactions and categories.
+- **What I owe**, **My cards**, **My loans** and **Simulate a loan**: balances, rates, installments,
+  statement and payment dates, a plan to get out of debt and loan offers side by side.
+- **Income**, **My budget**, **Upcoming bills**, **Subscriptions**, **Net worth**, **Household**,
+  **Calendar**, **Timeline** and **Where my money goes**.
+- **Assistant** (⌘J), optional: your own Claude Code, Codex or opencode, or an Ollama model on your
+  computer, reads the open book; every change it suggests is a card you accept (⌘Z undoes it).
+- In Spanish, English, Portuguese and French.
 
-- **Inicio**: cuánto puedes gastar hoy sin pasarte, lo que vence pronto y lo que merece una mirada.
-- **Recibos**: arrastra fotos o PDF a la ventana; se leen en tu computador y esperan a que los
-  revises y los guardes.
-- **Cuentas y extractos**: suelta tus extractos (PDF con contraseña, Excel, CSV) y quedan en la cuenta
-  correcta, con sus movimientos y categorías.
-- **Lo que debo**, **Mis tarjetas**, **Mis créditos** y **Simular un crédito**: saldos, tasas, cuotas,
-  fechas de corte y de pago, un plan para salir de deudas y ofertas de crédito lado a lado.
-- **Ingresos**, **Mi presupuesto**, **Pagos pendientes**, **Suscripciones**, **Patrimonio**, **Hogar**,
-  **Calendario**, **Línea de tiempo** y **En qué se me va**.
-- **Asistente** (⌘J), opcional: tu propio Claude Code, Codex u opencode, o un modelo de Ollama en tu
-  computador, lee el libro abierto; cada cambio que propone es una tarjeta que tú aceptas (⌘Z lo deshace).
-- En español, inglés, portugués y francés.
+## Download and install
 
-## Descargar e instalar
+Requirements: **macOS 11 or later on an Apple silicon Mac** (M1 or later). There is no version for
+Intel Macs, Windows or Linux yet.
 
-Requisitos: **macOS 11 o posterior en un Mac con Apple silicon** (M1 o posterior). Por ahora no hay
-versión para Mac con Intel, Windows ni Linux.
+1. Download **[expense-me-macos-arm64.zip](https://github.com/otherwisetech/expense-me-releases/releases/latest/download/expense-me-macos-arm64.zip)**
+   (or pick a version under [Releases](https://github.com/otherwisetech/expense-me-releases/releases)).
+2. Open the `.zip` and drag **expense me** into your **Applications** folder.
+3. **The first time**, right-click (or Control-click) **expense me** → **Open** → **Open**.
+   The app is signed *ad hoc* and isn't notarized by Apple, which is why macOS asks. If macOS only
+   offers "Done" or "Move to Trash" (macOS 15 or later), go to **System Settings → Privacy & Security**
+   and click **Open Anyway**. After that it opens normally. macOS may also ask once for access to the
+   keychain: choose "Always Allow".
 
-1. Descarga **[expense-me-macos-arm64.zip](https://github.com/otherwisetech/expense-me-releases/releases/latest/download/expense-me-macos-arm64.zip)**
-   (o elige una versión en [Releases](https://github.com/otherwisetech/expense-me-releases/releases)).
-2. Abre el `.zip` y arrastra **expense me** a la carpeta **Aplicaciones**.
-3. **La primera vez**, haz clic derecho (o Control-clic) sobre **expense me** → **Abrir** → **Abrir**.
-   La app tiene firma *ad hoc* y no está notarizada por Apple, por eso macOS pregunta. Si macOS solo
-   ofrece "Listo" o "Mover a la papelera" (macOS 15 o posterior), ve a **Ajustes del Sistema →
-   Privacidad y seguridad** y pulsa **Abrir igualmente**. Después se abre normal.
+You can also install it and keep it up to date with **Otherwise Hub**, the free installer for
+Otherwise apps ([otherwisetech.com](https://otherwisetech.com)).
 
-También puedes instalarla y mantenerla al día con **Otherwise Hub**, el instalador gratuito de las
-apps de Otherwise ([otherwisetech.com](https://otherwisetech.com)).
-
-Para comprobar la descarga, cada release trae un archivo `.sha256`:
+To verify the download, each release includes a `.sha256` file:
 
 ```
 shasum -a 256 -c expense-me-macos-arm64.zip.sha256
 ```
 
-## Privacidad: tus datos se quedan en tu computador
+## Privacy: your data stays on your computer
 
-- Tus libros (recibos, extractos, movimientos) se guardan en una carpeta de tu computador que tú
-  eliges (puede ser, por ejemplo, una carpeta de OneDrive). No hay cuenta ni servidor de Otherwise.
-- expense me no envía tus datos a Otherwise ni a nadie. Solo se conecta a internet cuando tú lo pides:
-  el servidor de correo que configures para recibir recibos, "Traer tasa de hoy en línea" (solo envía
-  el par de monedas y la fecha) y, si lo usas, el asistente: lo que lee tu herramienta de IA va al
-  proveedor de esa herramienta, salvo que uses Ollama en tu computador.
-- Los avisos no muestran comercios ni valores, a menos que lo actives en Ajustes.
+- Your books (receipts, statements, transactions) are stored in a folder on your computer that you
+  choose (it can be, for example, a OneDrive folder). There is no Otherwise account or server.
+- expense me doesn't send your data to Otherwise or anyone else. It only goes online when you ask it
+  to: the mail server you set up to receive receipts, "Fetch today's rate online" (it sends only the
+  currency pair and the date) and, if you use it, the assistant: whatever your AI tool reads goes to
+  that tool's provider, unless you use Ollama on your computer.
+- Notifications don't show merchants or amounts unless you turn that on in Settings.
 
-## Reportar un problema o pedir algo
+## Report a problem or request a feature
 
-Abre un [issue](https://github.com/otherwisetech/expense-me-releases/issues/new/choose) con la
-plantilla de error o de idea. **Los issues son públicos: nunca incluyas datos personales ni
-financieros reales** (nombres, montos, números de cuenta o tarjeta, extractos, recibos, rutas de tu
-computador). Tapa esos datos en las capturas. Nunca te pediremos tu libro ni tus extractos.
+Open an [issue](https://github.com/otherwisetech/expense-me-releases/issues/new/choose) using the bug
+or feature form. **Issues are public: never include personal or real financial data** (names,
+amounts, account or card numbers, statements, receipts, paths on your computer). Cover that data in
+screenshots. We will never ask for your book or your statements.
 
-Para una vulnerabilidad de seguridad, no abras un issue: lee [SECURITY.md](SECURITY.md).
+For a security vulnerability, don't open an issue: read [SECURITY.md](SECURITY.md).
 
-## Licencia
+## License
 
-Software propietario, gratis para usar. © 2026 Otherwise Technologies LLC, Wyoming, EE. UU. Todos los
-derechos reservados. Ver [LICENSE](LICENSE). Los componentes de terceros conservan sus propias
-licencias: [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Cambios por versión:
+Proprietary software, free to use. © 2026 Otherwise Technologies LLC, Wyoming, USA. All rights
+reserved. See [LICENSE](LICENSE). Third-party components keep their own licenses:
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Changes by version (in Spanish):
 [CHANGELOG.md](CHANGELOG.md).
-
----
-
-## English
-
-**Free, private personal finance for your Mac**, by [Otherwise Technologies LLC](https://otherwisetech.com).
-Receipts, bank accounts and statements, cards, loans, budget, bills, subscriptions, income and net
-worth in one place, on your computer. No account, no subscription.
-
-**This repository only holds builds and documentation.** expense me is proprietary, closed-source
-software (free to use); its source code is not here.
-
-### Download and install
-
-Requires **macOS 11 or later on an Apple silicon Mac** (M1 or later). There is no Intel, Windows or
-Linux build yet.
-
-1. Download **[expense-me-macos-arm64.zip](https://github.com/otherwisetech/expense-me-releases/releases/latest/download/expense-me-macos-arm64.zip)**
-   (or pick a version under [Releases](https://github.com/otherwisetech/expense-me-releases/releases)).
-2. Open the `.zip` and drag **expense me** into **Applications**.
-3. **The first time**, right-click (or Control-click) **expense me** → **Open** → **Open**. The app is
-   signed *ad hoc* and not notarized by Apple, so macOS asks. If macOS only offers "Done" or "Move to
-   Trash" (macOS 15 or later), go to **System Settings → Privacy & Security** and click **Open Anyway**.
-
-You can also install it, and keep it up to date, with **Otherwise Hub**. Each release has a `.sha256`
-file: `shasum -a 256 -c expense-me-macos-arm64.zip.sha256`.
-
-### Privacy: your data stays on your computer
-
-Your books live in a folder on your computer that you choose. There is no Otherwise account or server,
-and expense me sends your data to no one. It only goes online when you ask it to: the mail server you
-set up, "Traer tasa de hoy en línea" (sends only the currency pair and the date), and the optional
-assistant, whose AI tool sends what it reads to that tool's provider (unless you use Ollama locally).
-
-### Report a problem or request a feature
-
-Open an [issue](https://github.com/otherwisetech/expense-me-releases/issues/new/choose) using the bug or
-feature form. **Issues are public: never include personal or real financial data** (names, amounts,
-account or card numbers, statements, receipts, paths on your computer). Security issues: see
-[SECURITY.md](SECURITY.md).
-
-### License
-
-Proprietary, free to use. © 2026 Otherwise Technologies LLC, Wyoming, USA. All rights reserved. See
-[LICENSE](LICENSE) and [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
