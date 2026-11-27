@@ -38,8 +38,10 @@ Intel Macs, Windows or Linux yet.
 3. **The first time**, right-click (or Control-click) **expense me** → **Open** → **Open**.
    The app is signed *ad hoc* and isn't notarized by Apple, which is why macOS asks. If macOS only
    offers "Done" or "Move to Trash" (macOS 15 or later), go to **System Settings → Privacy & Security**
-   and click **Open Anyway**. After that it opens normally. macOS may also ask once for access to the
-   keychain: choose "Always Allow".
+   and click **Open Anyway**. After that it opens normally. If you update from 0.3.17 or earlier, macOS may ask one last time
+   for keychain access, to move your saved passwords: choose "Always Allow". From 0.3.18 on,
+   expense me keeps them in a file on your computer that only your user can read, and doesn't ask
+   again.
 
 You can also install it and keep it up to date with **Otherwise Hub**, the free installer for
 Otherwise apps ([otherwisetech.com](https://otherwisetech.com)).
@@ -55,7 +57,7 @@ shasum -a 256 -c expense-me-macos-arm64.zip.sha256
 - Your books (receipts, statements, transactions) are stored in a folder on your computer that you
   choose (it can be, for example, a OneDrive folder). There is no Otherwise account or server.
 - expense me doesn't send your data to Otherwise or anyone else. It only goes online when you ask it
-  to: the mail server you set up to receive receipts, "Fetch today's rate online" (it sends only the
+  to: the mail server you set up to receive receipts, "Get today's rate online" (it sends only the
   currency pair and the date) and, if you use it, the assistant: whatever your AI tool reads goes to
   that tool's provider, unless you use Ollama on your computer.
 - Notifications don't show merchants or amounts unless you turn that on in Settings.

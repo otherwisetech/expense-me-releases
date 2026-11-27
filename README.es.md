@@ -38,8 +38,10 @@ versión para Mac con Intel, Windows ni Linux.
 3. **La primera vez**, haz clic derecho (o Control-clic) sobre **expense me** → **Abrir** → **Abrir**.
    La app tiene firma *ad hoc* y no está notarizada por Apple, por eso macOS pregunta. Si macOS solo
    ofrece "Listo" o "Mover a la papelera" (macOS 15 o posterior), ve a **Ajustes del Sistema →
-   Privacidad y seguridad** y pulsa **Abrir igualmente**. Después se abre normal. macOS puede pedir
-   una vez acceso al llavero: elige "Permitir siempre".
+   Privacidad y seguridad** y pulsa **Abrir igualmente**. Después se abre normal. Si actualizas desde la 0.3.17 o
+   anterior, macOS puede pedir una última vez acceso al llavero, para pasar tus claves guardadas:
+   elige "Permitir siempre". Desde la 0.3.18, expense me las guarda en un archivo de tu computador
+   que solo tu usuario puede leer, y no vuelve a preguntar.
 
 También puedes instalarla y mantenerla al día con **Otherwise Hub**, el instalador gratuito de las
 apps de Otherwise ([otherwisetech.com](https://otherwisetech.com)).
