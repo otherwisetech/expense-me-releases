@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Reportar una vulnerabilidad (en privado) / Report a vulnerability (privately)
+    url: mailto:hello@otherwisetech.com
+    about: No abras un issue público para fallas de seguridad. / Don't open a public issue for security problems.
+  - name: Descargar expense me / Download expense me
+    url: https://github.com/otherwisetech/expense-me-releases/releases/latest
+    about: La última versión para macOS (Apple silicon). / The latest version for macOS (Apple silicon).

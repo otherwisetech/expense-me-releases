@@ -1,0 +1,33 @@
+expense me — proprietary software (free to use)
+
+Copyright © 2026 Otherwise Technologies LLC. All rights reserved.
+
+expense me, including its object code, documentation, images and other files (the "Software"),
+is the proprietary property of Otherwise Technologies LLC, a Wyoming (USA) limited liability
+company ("Otherwise"). The Software is closed source; its source code is not published.
+
+Free use. Otherwise grants you a free, non-exclusive, non-transferable, revocable licence to
+download the builds of the Software that Otherwise publishes (in this repository's releases, on
+https://otherwisetech.com or through Otherwise Hub), and to install and use them on computers you
+own or control.
+
+Without Otherwise's prior written permission you may not copy (except to install and back up the
+Software for your own use), modify, adapt, translate, create derivative works of, distribute,
+redistribute, republish, mirror, sublicense, sell, rent, lend or otherwise make the Software
+available to any third party, nor reverse engineer, decompile or disassemble it, except to the
+extent applicable law expressly permits this despite this limitation. Point others to this
+repository or to https://otherwisetech.com instead of sharing the files.
+
+The data you create or import with the Software is yours. Otherwise does not receive it.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NON-INFRINGEMENT. THE SOFTWARE IS NOT FINANCIAL, TAX OR LEGAL ADVICE. IN NO EVENT SHALL OTHERWISE
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR ITS USE.
+
+Third-party components included with the Software (for example the Inter font and the
+open-source libraries listed in THIRD-PARTY-NOTICES.md) remain under their own licenses, and
+nothing in this licence limits your rights under those licenses.
+
+Contact: hello@otherwisetech.com · https://otherwisetech.com
